@@ -1,5 +1,4 @@
 # First homework of Algorithms for Data Science
-======
 In this repo you can find:
 * **script.py**
 The Python file contains all the scripts required for Module 1 and Module 2 of the homework.

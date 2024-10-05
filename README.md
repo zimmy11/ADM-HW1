@@ -1,4 +1,4 @@
-# First homework of Algorithms for Data Miing
+# First homework of Algorithms for Data Mining
 In this repo you can find:
 * **script.py**
   

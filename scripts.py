@@ -1,14 +1,13 @@
 
 
-#Say "hello,world!" with Python
-#script Say "hello,world!" with Python
+# Say "Hello,world!" with Python
 
 if __name__ == '__main__':
     string = "Hello, World!"
     print(string)
 
-#python if-else
-#script_if-else
+# Python If-Else
+
 
 if __name__ == '__main__':
     n = int(input().strip())
@@ -23,8 +22,8 @@ if __name__ == '__main__':
             if n>20:
                 print("Not Weird")
 
-#Arithmetic Operators
-#script_arithmetic operators
+# Arithmetic Operators
+
 
 if __name__ == '__main__':
     a = int(input())
@@ -33,8 +32,8 @@ if __name__ == '__main__':
     print(a-b)
     print(a*b)
 
-#Division
-#script_division
+# Python: Division
+
 
 if __name__ == '__main__':
     a = int(input())
@@ -42,16 +41,16 @@ if __name__ == '__main__':
     print(a//b)
     print(a/b)
 
-#Loops
-#script_loops
+# Loops
+
 
 if __name__ == '__main__':
     n = int(input())
     for i in range(0,n):
         print(i**2)
 
-#Write a Function 
-#script_write_a_function
+#Write a function 
+
 
 def is_leap(year):
     leap = False
@@ -72,7 +71,7 @@ year = int(input())
 print(is_leap(year))
 
 #Print Function
-#script_print_function
+
 
 if __name__ == '__main__':
     n = int(input())
@@ -84,7 +83,7 @@ if __name__ == '__main__':
 
 
 #List Comprehensions
-#script_list_comprehensions
+
 if __name__ == '__main__':
     x = int(input())
     y = int(input())
@@ -93,17 +92,18 @@ if __name__ == '__main__':
 coordinate = [[i, j, k] for i in range(x + 1) for j in range(y + 1) for k in range(z + 1) if i + j + k != n]
 print(coordinate) 
 
-#Find the Runner_up Score
-#script_find_the_runner_up_score
-n = int(input())
-arr = set(map(int, input().split()))
-runner_up = sorted(arr, reverse=True)[1]
-print(runner_up)
-        
+#Find the Runner-up Score!
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = set(map(int, input().split()))
+    runner_up = sorted(arr, reverse=True)[1]
+    print(runner_up)
+            
 
 
 #Nested Lists
-#script_nested_lists
+
 if __name__ == '__main__':
     lista=[]
     for _ in range(int(input())):
@@ -120,8 +120,8 @@ if __name__ == '__main__':
     for name in ordered_names:
         print(name)
 
-#Finding the Percentage
-#script_finding_the_percentage
+#Finding the percentage
+
 if __name__ == '__main__':
     n = int(input())
     student_marks = {}
@@ -139,7 +139,7 @@ if __name__ == '__main__':
     print(f'{average:.2f}')
 
 #Lists
-#script_lists
+
 if __name__ == '__main__':
     N = int(input())
     lista = []
@@ -164,7 +164,7 @@ if __name__ == '__main__':
                 lista.insert(int(value[0]),int(value[1]))
  
 #Tuples
-# script_tuples
+
 if __name__ == '__main__':
     n = int(input())
     integer_list = map(int, input().split())
@@ -174,8 +174,8 @@ if __name__ == '__main__':
     print(hash(t))   
 
 
-#Swap Case
-# script_swap_case 
+#sWAP Case
+
 def swap_case(s):
     return s.swapcase()
 
@@ -185,7 +185,7 @@ if __name__ == '__main__':
     print(result)
 
 #String Split and Join 
-# script_split_and_join
+
 def split_and_join(line):
     # write your code here
     splitted_string = line.split()
@@ -196,20 +196,20 @@ if __name__ == '__main__':
     result = split_and_join(line)
     print(result)  
 
-#What's your name
-# script_whats_your_name
+#What's Your Name?
+
 def print_full_name(first, last):
     # Write your code here
     string = "Hello "+first+" "+last+"! You just delved into python."
     print(string)
 
 #Mutations
-# script_mutations
+
 def mutate_string(string, position, character):
     return string[:position]+character+string[position+1:]   
 
-#Find a String
-# script_find_a_string
+#Find a string
+
 def count_substring(string, sub_string):
     count = 0
     start = 0
@@ -223,7 +223,7 @@ def count_substring(string, sub_string):
     return count
 
 #String Validators
-# script_string_validators
+
 if __name__ == '__main__':
     s = input()
     exit = 0
@@ -273,8 +273,8 @@ if __name__ == '__main__':
     
         
 
- #Text_alignment
-#script_text_alignment
+ #Text Alignment
+
 thickness = int(input())
 for i in range(thickness):
     print(("H" * (2 * i + 1)).center(thickness * 2, " "))
@@ -287,15 +287,18 @@ for i in range(thickness):
 print(("H"*thickness+(thickness*3)*" "+"H"*thickness).rjust(thickness*5 + thickness//2," "))
 for i in range(thickness):
     print(("H" * (2 * (thickness-i) - 1)).center(thickness * 2, " ").rjust(thickness*6," "))
+
+
 #Text Wrap 
-#script_text_wrap
+
 def wrap(string, max_width):
     sub_string=""
     for i in range(0,len(string),max_width):
         sub_string = sub_string + string[i:i+max_width] + "\n"
     return sub_string
+
 #Designer Door Mat
-#script_door_mat
+
 rows,cols = input().split()
 rows = int(rows)
 cols = int(cols)
@@ -307,8 +310,8 @@ for i in range(rows - 2, 0, -2):
     pattern = ".|." * i
     print(pattern.center(cols, '-'))
 
-#string Formatting
-#script_string_formatting
+#String Formatting
+
 def print_formatted(number):
     # your code goes here
     space_padding = len(str(bin(number)[2:]))+1
@@ -316,8 +319,8 @@ def print_formatted(number):
         print(str(i).rjust(space_padding-1," ")+str(oct(i)[2:]).rjust(space_padding," ")+str(hex(i)[2:]).upper().rjust(space_padding," ")+str(bin(i)[2:]).rjust(space_padding," "))
 
 
-#alphabet Rangoli
-#script_alphabet_rangoli
+#Alphabet Rangoli
+
 import string
 def print_rangoli(size):
     # your code goes here
@@ -332,8 +335,9 @@ def print_rangoli(size):
     for i in range(1, size):
         pattern = '-'.join(letters[size - 1:i:-1] + letters[i:size])
         print(pattern.center(size * 4 - 3, '-')) 
-#Capitalize
-#script_capitalize
+
+#Capitalize!
+
 def solve(s):
     upper_string = s.split(" ")
     string = ""
@@ -343,8 +347,9 @@ def solve(s):
         string += upper_string[i]
         string += " "
     return string
-#Minion Game
-#script_minion_game
+
+#The Minion Game
+
 def minion_game(string):
     # your code goes here
     score_stuart=0
@@ -362,15 +367,16 @@ def minion_game(string):
         print("Kevin "+str(score_kevin))
     else:
         print("Draw")
-#Merge The Tools
-#script_merge_the_tools
+
+#Merge The Tools!
+
 def merge_the_tools(string, k):
     # your code goes here
     for i in range(0,len(string),k):
         print("".join(set(list(string[i:i+k]))))
 
 #Introduction to Sets
-#script_introduction_to_sets
+
 def average(array):
     # your code goes here
     new_set = set(array)
@@ -380,21 +386,8 @@ def average(array):
         avg+=elem
     return round(avg/n,3)
 
-#Symmetric difference
-#script_symmetric_difference
-size1 = int(input())
-lis1 = input().split()
-newset1 = set(list(map(int,lis1)))
-size2 = int(input())
-lis2 = input().split()
-newset2 = set(list(map(int,lis2)))
-new_set = (newset1.union(newset2)).difference(newset1.intersection(newset2))
-new_set = sorted(new_set)
-for elem in new_set:
-    print(elem)
-
 #No idea!
-#script_no_idea!
+
 sizes = input().split()
 n = sizes[0]
 m = sizes[1]
@@ -410,16 +403,31 @@ for elem in array:
 
 print(happiness)
 
+#Symmetric Difference
+
+size1 = int(input())
+lis1 = input().split()
+newset1 = set(list(map(int,lis1)))
+size2 = int(input())
+lis2 = input().split()
+newset2 = set(list(map(int,lis2)))
+new_set = (newset1.union(newset2)).difference(newset1.intersection(newset2))
+new_set = sorted(new_set)
+for elem in new_set:
+    print(elem)
+
+
+
 #Set.add()
-#script_set.add()
+
 n = int(input())
 new_set = set()
 for i in range(n):
     new_set.add(input())
 print(len(new_set))
 
-#Set .discard(),.remove() & pop()
-#script_set_.discard(),.remove() & pop()
+#Set .discard(), .remove() & .pop()
+
 n = int(input())
 s = set(map(int, input().split()))
 commands = int(input())
@@ -440,32 +448,32 @@ for elem in s:
 print(sum_set)
 
 
-#Set.union() Operation
-#script_set_union_operation
+#Set .union() Operation
+
 n1 = int(input())
 english = set(map(int, input().split()))
 n2 = int(input())
 french = set(map(int, input().split()))
 print(len(english.union(french)))
 
-#Set.intersection Operation
-#script_set.intersection_operation
+#Set .intersection Operation
+
 n1 = int(input())
 english = set(map(int, input().split()))
 n2 = int(input())
 french = set(map(int, input().split()))
 print(len(english.intersection(french)))
 
-#Set.difference() Operation
-#script_set.difference_operation
+#Set .difference() Operation
+
 n1 = int(input())
 english = set(map(int, input().split()))
 n2 = int(input())
 french = set(map(int, input().split()))
 print(len(english.difference(french)))
 
-#Set.symmetric_difference() Operation
-#script_set.symmetric_difference_operation
+#Set .symmetric_difference() Operation
+
 n1 = int(input())
 english = set(map(int, input().split()))
 n2 = int(input())
@@ -473,7 +481,7 @@ french = set(map(int, input().split()))
 print(len(english.symmetric_difference(french)))
 
 #Set Mutations
-#script_set_mutations
+
 sizeA = int(input())
 A = set(map(int, input().split()))
 number_sets = int(input())
@@ -494,7 +502,7 @@ for elem in A:
 print(sum_set)
 
 #The Captain's Room
-#script_the_captains_room
+
 K = int(input())
 lis = list(map(int, input().split()))
 sum_set = sum(set(lis))*K
@@ -502,7 +510,7 @@ sum_list = sum(lis)
 print((sum_set - sum_list)//(K-1))
 
 #Check Subset
-#script_check_subset
+
 T = int(input())
 for i in range(T):
     sizeA = int(input())
@@ -511,8 +519,8 @@ for i in range(T):
     B = set(map(int, input().split()))
     print(A == A.intersection(B))
 
-#Check Strict Subset
-#script_check_strict_subset
+#Check Strict Superset
+
 a = True
 A = set(map(int, input().split()))
 n = int(input())
@@ -525,7 +533,7 @@ print(a)
 
 
 #collections.Counter()
-#script_collections.counter()
+
 from collections import Counter
 X  = int(input())
 shoe_sizes = Counter(list(map(int,input().split())))
@@ -539,7 +547,7 @@ for i in range(customers):
 print(earn)
 
 #DefaultDict Tutorial
-#script_defaultdict_tutorial
+
 from collections import defaultdict
 n , m = map(int, input().split())
 d = defaultdict(list)
@@ -552,16 +560,18 @@ for i in range(m):
         print(" ".join(map(str, d[letter])))
     else:
         print(-1)
+
 #Collections.namedtuple()
-#script_collections.namedtuple()
+
 N = int(input())
 index = input().split().index("MARKS")
 avg = 0
 for i in range(N):
     avg+=int(input().split()[index])
 print(avg/N)
+
 #Collections.OrderedDict()
-#script_collections.ordereddict()
+
 N = int(input())
 ordered_dict = {}
 for _ in range(N):
@@ -573,8 +583,9 @@ for _ in range(N):
         ordered_dict[key]= ordered_dict[key] + value
 for key in ordered_dict.keys():
     print(key+" "+str(ordered_dict[key]))
+
 #Word Order
-#script_word_order
+
 from collections import Counter
 size = int(input())
 lis = []
@@ -586,7 +597,7 @@ for elem in d.values():
     print(elem,end=" ")
 
 #Collections.deque()
-#script_collections.deque()
+
 from collections import deque
 d = deque()
 N = int(input())
@@ -602,8 +613,28 @@ for i in range(N):
         d.appendleft(int(command[1]))
 for elem in d:
     print(elem, end=" ")
-#Pilling Up!
-#script_pilling_ip!
+
+#Company Logo
+
+s = input()
+lis = Counter(s)
+left_elements = 3
+for key, value in lis.most_common():
+        if left_elements==0:
+            break
+        keys = [chiave for chiave, valore in lis.items() if valore == value]
+        if len(keys) == 1:
+            print(key, end=" ")
+            print(value)
+        else:
+            keys = sorted(keys)
+            print(keys[0],end = " ")
+            print(lis[keys[0]])
+            del lis[keys[0]]
+        left_elements-=1    
+
+#Piling Up!
+
 from collections import deque
 T = int(input())
 for i in range(T):
@@ -626,27 +657,10 @@ for i in range(T):
         print("Yes")
     else:
         print("No")
-#Company Logo
-#script_company_logo
-s = input()
-lis = Counter(s)
-left_elements = 3
-for key, value in lis.most_common():
-        if left_elements==0:
-            break
-        keys = [chiave for chiave, valore in lis.items() if valore == value]
-        if len(keys) == 1:
-            print(key, end=" ")
-            print(value)
-        else:
-            keys = sorted(keys)
-            print(keys[0],end = " ")
-            print(lis[keys[0]])
-            del lis[keys[0]]
-        left_elements-=1    
+
 
 #Calendar Module
-#script_calendar_module
+
 import calendar
 s = list(map(int, input().split()))
 cal = calendar.weekday(s[2], s[0], s[1])
@@ -654,7 +668,7 @@ print(calendar.day_name[cal].upper())
 
 
 #Time Delta
-#script_time_delta
+
 from datetime import datetime
 def time_delta(t1, t2):
     time_format = "%a %d %b %Y %H:%M:%S %z"
@@ -665,7 +679,7 @@ def time_delta(t1, t2):
 
 
 #Exceptions
-#script_exceptions
+
 T = int(input())
 for i in range(T):
     
@@ -677,8 +691,8 @@ for i in range(T):
     except ValueError as e:
         print("Error Code:", e)
         
-#Zipped
-#script_zipped
+#Zipped!
+
 N, X = map(int, input().split())
 tot = []
 for i in range(X):
@@ -689,8 +703,8 @@ for elem in tot_marks:
     print(sum(elem) / X)
 
 
-#Python-sort-sort
-#script_python-sort-sort
+#Athlete Sort
+
 if __name__ == '__main__':
     nm = input().split()
 
@@ -709,8 +723,9 @@ if __name__ == '__main__':
         for i in range(m):
             print(elem[i], end=" ")
         print("")
-#ginorts
-#script_ginorts
+
+#ginortS
+
 string = input()
 upper_char = []
 lower_char = []
@@ -728,8 +743,8 @@ for char in string:
 
 print("".join(sorted(lower_char)+sorted(upper_char)+sorted(odd_digits)+sorted(even_digits)))
 
-#Functionals
-#script_functionals
+#Map and Lambda Function
+
 cube = lambda x: x**3
 
 def fibonacci(n):
@@ -746,7 +761,7 @@ def fibonacci(n):
         return fib_sequence
     
 #Detect Floating Point Number
-#script_detect_floating_point_number
+
 size = int(input())
 a = True
 for i in range(size):
@@ -765,15 +780,15 @@ for i in range(size):
     except ValueError:
         print(not a)
 
-#Re.split
-#script_re.split
+#Re.split()
+
 regex_pattern = r"\.|,"	# Do not delete 'r'.
 
 import re
 print("\n".join(re.split(regex_pattern, input())))
 
-#Group(),Groups(),Groupdict()
-#script_group().groups(),groupdict()
+#Group(),Groups() & Groupdict()
+
 import re
 string = input()
 regex = r'([a-zA-Z0-9])\1+'
@@ -782,8 +797,9 @@ if substring:
     print(substring.group(1))
 else:
     print(-1)
-#Re.findall & Re.finditer
-#script_re.findall_&_re.finditer
+
+#Re.findall() & Re.finditer()
+
 import re
 string = input()
 regex = r'(?<=[qwrtypsdfghjklzxcvbnmQWRTYPSDFGHJKLZXCVBNM])[aeiouAEIOU]{2,}(?=[qwrtypsdfghjklzxcvbnmQWRTYPSDFGHJKLZXCVBNM])'
@@ -792,8 +808,9 @@ if len(re.findall(regex, string))==0:
 else:
     for elem in re.findall(regex, string):
         print(elem)
+
 #Re.start() & Re.end()
-#script_5
+
 import re
 string = input()
 substring = input()
@@ -814,8 +831,9 @@ else:
         if match.start() == match.end()-1:
             start+=1
             count+=1
+
 #Regex Substitution
-#script_regex_substitution
+
 import re
 N = int(input())
 for i in range(N):
@@ -825,15 +843,16 @@ for i in range(N):
         print(string)
     else:
         print(re.sub(r'(?<=\s)(\|{2})(?=\s)', "or", string))
+
 #Validating Roman Numerals
-#script_validating_roman_numerals
+
 regex_pattern = r"(M{0,3})(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$"	# Do not delete 'r'.
 
 import re
 print(str(bool(re.match(regex_pattern, input()))))
 
-#Validating Phone Numbers
-#script_validating_phone_numbers
+#Validating phone numbers
+
 import re
 N = int(input())
 regex = r'\b(7|8|9)(\d{9})$'
@@ -843,8 +862,9 @@ for i in range(N):
         print("YES")
     else:
         print("NO")
+
 #Validating and Parsing Email Addresses
-#script_validating_and_parsing_email_address
+
 import re
 N = int(input())
 regex = r'<([a-zA-Z])(\w|\.|\-)+@([a-zA-Z]+)\.([a-zA-Z]{1,3})>'
@@ -853,8 +873,9 @@ for i in range(N):
     lis = string.split()
     if re.match(regex, lis[1]):
         print(string)
+
 #Hex Color Code
-#script_hex_color_code
+
 import re
 N = int(input())
 regex = r'\#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})(?:\;|\,|\))'
@@ -863,8 +884,9 @@ for i in range(N):
     lis = re.findall(regex, string)
     for el in lis:
         print("#"+el)
-#HTML Parser Part 1
-#script_html_parser_part_1
+
+#HTML Parser - Part 1
+
 from html.parser import HTMLParser
 class MyHTLMParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
@@ -880,9 +902,7 @@ class MyHTLMParser(HTMLParser):
         print("Empty :", tag)
         if attrs:
             for element in attrs:
-                print("-> "+element[0]+" >", element[1])
-        
-            
+                print("-> "+element[0]+" >", element[1])          
  
 N = int(input())
 parser = MyHTLMParser()
@@ -890,8 +910,9 @@ parser = MyHTLMParser()
 for i in range(N):
     string = input()
     parser.feed(string)
-#HTML Parser Part 2
-#script_html_parser_part_2
+
+#HTML Parser - Part 2
+
 from html.parser import HTMLParser
 class MyHTMLParser(HTMLParser):
     def handle_comment(self, data):
@@ -915,8 +936,8 @@ parser = MyHTMLParser()
 parser.feed(html)
 parser.close()
 
-#Detect HTML Tags,Attributes and Attribute Values
-#script_detect_html_tags,attributes_and_attribute_values
+#Detect HTML Tags, Attributes and Attribute Values
+
 from html.parser import HTMLParser
 class MyHTLMParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
@@ -936,8 +957,9 @@ parser = MyHTLMParser()
 for i in range(N):
     string = input()
     parser.feed(string)
+
 #Validating UID
-#script_validating_uid
+
 import re
 N = int(input())
 regex_alpha = r'.*[A-Z].*[A-Z].*'
@@ -950,8 +972,9 @@ for i in range(N):
         print("Valid")
     else:
         print("Invalid")
+
 #Validating Credit Card Numbers
-#script_validating_credit_card_numbers
+
 import re
 N = int(input())
 regex_digit = r'^[4-6][0-9]{3}-?[0-9]{4}-?[0-9]{4}-?[0-9]{4}$'
@@ -962,8 +985,8 @@ for i in range(N):
         print("Valid")
     else:
         print("Invalid")
+
 #Validating Postal Codes
-#script_validating_postal_codes
 
 regex_integer_in_range = r"^[1-9][0-9]{5}$"	# Do not delete 'r'.
 regex_alternating_repetitive_digit_pair = r"([0-9])(?=[0-9]\1)"	# Do not delete 'r'.
@@ -973,7 +996,7 @@ print (bool(re.match(regex_integer_in_range, P))
 and len(re.findall(regex_alternating_repetitive_digit_pair, P)) < 2)
 
 #Matrix Script
-#script_matrix_script
+
 import math
 import os
 import random
@@ -993,16 +1016,16 @@ for i in range(m):
         string += matrix[j][i]
 print(re.sub(regex,' ',string),end="")
         
-#XML1-Find the Score
-#script_xml1-find_the_score
+#XML 1 - Find the Score
+
 def get_attr_number(node):
     count = 0
     for element in node.iter():
         count+=len(element.attrib)
     return count
 
-#XML2-Find the Maximum Depth
-#script_xml2-find_the_maximum_depth
+#XML2 - Find the Maximum Depth
+
 maxdepth = 0
 def depth(elem, level):
     global maxdepth
@@ -1014,8 +1037,8 @@ def depth(elem, level):
         child_depth = depth(el,level)
      
 
-#Standardize Mobile Number using Decorators
-# script_standardize_mobile_number_using_decorators
+#Standardize Mobile Number Using Decorators
+
 import re
 def wrapper(f):
     def fun(l):
@@ -1031,8 +1054,8 @@ def wrapper(f):
             
     return fun        
 
-#Decorators-2-name-directory
-#script_decorators-2-name-directory
+#Decorators 2 - Name Directory
+
 def person_lister(f):
     def inner(people):
         # complete the function
@@ -1041,19 +1064,20 @@ def person_lister(f):
         
     return inner
 
-#np-arrays
-#script_np-arrays
+#Arrays
+
 import numpy
 def arrays(arr):
     return numpy.array(arr,float)[::-1]
-# shape reshape
-#script_shape_reshape
+
+# Shape and Reshape
+
 lis = list(map(int,input().split()))
 arr = numpy.array(lis)
 print(numpy.reshape(arr,(3,3)))
 
 # Transpose and Flatten
-#script_transpose_and_flatten
+
 N,M = map(int,input().split())
 lis = []
 for i in range(N):
@@ -1063,7 +1087,7 @@ print(numpy.transpose(arr))
 print(arr.flatten())
 
 #Concatenate
-#script_concatenate
+
 N,M,P = map(int, input().split())
 lis = []
 lis2 = []
@@ -1076,20 +1100,20 @@ arr2 = numpy.array(lis2)
 print(numpy.concatenate((arr1,arr2), axis = 0))
 
 #Zeros and Ones
-#script_zeros_and_ones
+
 lis  = list(map(int ,input().split()))
 arr = numpy.array(lis)
 print(numpy.zeros(arr, dtype = numpy.int))
 print(numpy.ones(arr, dtype = numpy.int))
 
 #Eye and Identity
-#script_eye_and_identity
+
 numpy.set_printoptions(legacy='1.13')
 n,m = map(int, input().split())
 print(numpy.eye(n,m))
 
 #Array Mathematics
-#script_array_mathematics
+
 n, m = map(int, input().split())
 lis1 = []
 lis2 = []
@@ -1106,31 +1130,34 @@ print(numpy.floor_divide(arr1, arr2))
 print(numpy.mod(arr1, arr2))
 print(numpy.power(arr1, arr2))
 
-#Floor,Ceil and Rint
-#script_floor,ceil_and_rint
+#Floor, Ceil and Rint
+
 numpy.set_printoptions(legacy='1.13')
 arr = numpy.array(list(map(float, input().split())))
 print(numpy.floor(arr))
 print(numpy.ceil(arr))
 print(numpy.rint(arr))
+
 #Sum and Prod
-#script_sum_and_prod
+
 n, m = map(int, input().split())
 lis = []
 for _ in range(n):
     lis.append(list(map(int, input().split())))
 arr = numpy.array(lis)
 print(numpy.prod(numpy.sum(arr, axis = 0)))  
+
 #Min and Max
-#script_min_and_max
+
 n, m = map(int, input().split())
 lis = []
 for _ in range(n):
     lis.append(list(map(int, input().split())))
 arr = numpy.array(lis)
 print(numpy.max(numpy.min(arr, axis = 1)))  
-#Mean,Var and Std
-#script_mean,var_and_std
+
+#Mean, Var, and Std
+
 n, m = map(int, input().split())
 lis = []
 for _ in range(n):
@@ -1141,7 +1168,7 @@ print(numpy.var(arr, axis=0))
 print(round(numpy.std(arr, axis=None),11))
 
 #Dot and Cross
-#script_dot_and_cross
+
 n = int(input())
 lis1 = []
 lis2=[]
@@ -1152,28 +1179,30 @@ for _ in range(n):
 arr1 = numpy.array(lis1)
 arr2 = numpy.array(lis2)
 print(numpy.dot(arr1, arr2))
+
 #Inner and Outer
-#script_inner_and_outer
+
 A = numpy.array(list(map(int, input().split())))
 B = numpy.array(list(map(int, input().split())))
 print(numpy.inner(A, B))
 print(numpy.outer(A, B))
 
 #Polynomials
-#script_polynomials
+
 pol = numpy.array(list(map(float, input().split())))
 x = int(input())
 print(numpy.polyval(pol, x))
+
 #Linear Algebra
-#script_linear_algebra
+
 n = int(input())
 lis = []
 for _ in range(n):
     lis.append(list(map(float, input().split())))
 print(round(numpy.linalg.det(lis),2))
 
-#BirthDay Cake Candles
-#script_birthday_cake_candles
+#Birthday Cake Candles
+
 def birthdayCakeCandles(candles):
     # Write your code here
     max_candle = max(candles)
@@ -1182,8 +1211,9 @@ def birthdayCakeCandles(candles):
         if elem == max_candle:
             count+=1
     return count
+
 #Number Line Jumps
-#script_number_line_jumps
+
 def kangaroo(x1, v1, x2, v2):
     current_pos1=x1
     current_pos2 = x2
@@ -1194,8 +1224,9 @@ def kangaroo(x1, v1, x2, v2):
             return "NO"
         current_pos1+=v1
         current_pos2+=v2
+
 #Viral Advertising
-#script_viral_advertising
+
 def viralAdvertising(n):
     liked = 5//2
     cumulative = liked
@@ -1203,8 +1234,9 @@ def viralAdvertising(n):
         liked = (3*liked)//2
         cumulative += liked
     return cumulative
+
 #Recursive Digit Sum
-#script_recursive_digit_sum
+
 def superDigit(n, k):
     if len(n)==1:
         return int(n)
@@ -1214,8 +1246,9 @@ def superDigit(n, k):
             count += int(char)
         count = count*k
         return superDigit(str(count), 1)  
-#Insertion Sort Part 1
-#script_insertion_sort_part1
+    
+#Insertion Sort - Part 1
+
 def insertionSort1(n, arr):
     number = arr[n-1]
     if len(arr) == 1:
@@ -1231,8 +1264,9 @@ def insertionSort1(n, arr):
     arr[i+1]=number
     for el in arr:
         print(el, end =" ")
-#Insertion Sort Part 2
-#script_insertion_sort_part2
+
+#Insertion Sort - Part 2
+
 def insertionSort2(n, arr):
     if len(arr) == 1:
         print(arr[0])

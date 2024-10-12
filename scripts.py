@@ -65,7 +65,6 @@ def is_leap(year):
             return True
         return leap
     
-    return leap
 
 year = int(input())
 print(is_leap(year))
@@ -386,7 +385,7 @@ def average(array):
         avg+=elem
     return round(avg/n,3)
 
-#No idea!
+#No Idea!
 
 sizes = input().split()
 n = sizes[0]
@@ -456,7 +455,7 @@ n2 = int(input())
 french = set(map(int, input().split()))
 print(len(english.union(french)))
 
-#Set .intersection Operation
+#Set .intersection() Operation
 
 n1 = int(input())
 english = set(map(int, input().split()))
